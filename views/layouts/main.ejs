@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- site title and description -->
+   <title><%= locals.title %></title>
+   <meta name="description" content="<%= locals.description %>">
+   <!-- css link -->
+   <link rel="stylesheet" href="/css/style.css">
+   <!-- js link -->
+   <script type="text/javascript" defer src="/js/script.js"></script>
+   <!-- google fonts -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+   <%- include('../partials/search.ejs') %>
+
+   <div class="container">
+      <%- include('../partials/header.ejs') %>
+      <main class="main">
+         <%- body %>
+      </main>
+      
+      <%- include('../partials/footer.ejs') %>
+      
+   </div>
+</body>
+</html>
